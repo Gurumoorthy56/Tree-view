@@ -1,0 +1,190 @@
+body {
+    overflow-x: hidden;
+}
+
+.tree-view ul {
+    list-style: none;
+    margin-left: 30px;
+}
+
+li {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+#message {
+    display: inline-block;
+    color: red;
+    height: 2px;
+}
+
+.tree-view {
+    margin-top: 20px;
+}
+
+.toggle {
+    cursor: pointer;
+    display: inline-block;
+    width: 24px;
+    margin-right: 4px;
+}
+
+.nested {
+    display: none;
+}
+
+.material-icons {
+    vertical-align: middle;
+}
+
+input[type='checkbox'] {
+    margin-right: 5px;
+    accent-color: rgb(56, 198, 56);
+}
+
+.vr {
+    border-right: 1px solid aliceblue;
+}
+
+.chip {
+    /* border: 5px solid red;
+    border-radius: 50%; */
+    background-color: grey;
+    padding: 10px;
+    margin: 10px 5px;
+    cursor: default;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.chip i {
+    cursor: pointer;
+    margin-left: 3px;
+}
+
+.clear {
+    background-color: red;
+    color: white;
+    margin-right: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.search-bar {
+    width: 300px;
+    border: 1px solid grey;
+    height: 35px;
+    padding-left: 10px;
+}
+
+.search-bar-div {
+    margin-left: -50px;
+}
+
+.scroll-div {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    z-index: 99;
+    width: 92%;
+    /* height: 300%; */
+    display: none;
+    overflow-y: scroll;
+    background-color: white;
+    width: inherit;
+}
+
+.autocomplete-items div {
+    color: black;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-bottom: 1px solid grey;
+    background-color: white;
+}
+
+/* .autocomplete-items div:hover, */
+.autocomplete-active {
+    background-color: black !important;
+    color: white !important;
+}
+
+
+.autocomplete-container {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+}
+
+.scroll-div {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.total {
+    background-color: aliceblue;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.chip .material-icons:hover {
+    /* color: rgb(207, 19, 19); */
+    text-shadow: red 0px 0px 8px;
+    scale: 1.2;
+    transition: scale .2s ease;
+}
+
+text,
+#autocomplete-list {
+    cursor: default;
+}
+
+@media screen and (max-width:1180px) {
+    .tree-view ul {
+        padding-left: 0;
+        margin-left: 15;
+    }
+}
+
+::selection {
+    background-color: black;
+    color: white;
+}
+
+/* body,
+text,
+.toggle,
+.chip,
+.material-icons,
+#autocomplete-list,
+input[type=checkbox] {
+    cursor: url(https://cdn.custom-cursor.com/db/2/32/pointer2.png), default !important;
+}
+
+.clear,
+input[type=text] {
+    cursor: url(https://cdn.custom-cursor.com/db/1/32/pointer1.png), pointer !important;
+} */
+
+::-webkit-scrollbar {
+    width: 18px;
+
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    /* height: 50px; */
+    background: #b1afaf;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9b9595;
+}
